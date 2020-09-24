@@ -1,0 +1,6 @@
+FROM openjdk:8
+MAINTAINER Luciana Ribas <lu.ribas6@gmail.com>
+ADD target/sq-manager.jar sq-manager.jar
+EXPOSE 8081
+ENTRYPOINT ["java" , -"-jar", "sq-manager.jar"]
+
